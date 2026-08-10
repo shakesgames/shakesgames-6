@@ -15,12 +15,12 @@
             var introDiv = document.createElement('div');
             introDiv.id = 'intro';
 
-            // Create and add STRONGDOG text
-            var strongDogDiv = document.createElement('div');
-            strongDogDiv.id = 'strongdog';
-            strongDogDiv.innerText = 'STRONGDOG';
-            strongDogDiv.style.opacity = '0'; // Start invisible
-            introDiv.appendChild(strongDogDiv);
+            // Create and add SHAKESGAMES text
+            var brandDiv = document.createElement('div');
+            brandDiv.id = 'shakesgames';
+            brandDiv.innerText = 'SHAKESGAMES';
+            brandDiv.style.opacity = '0'; // Start invisible
+            introDiv.appendChild(brandDiv);
 
             // Create and add XP text
             var xpDiv = document.createElement('div');
@@ -32,7 +32,7 @@
             // Create and add image
             var uploadedImage = document.createElement('img');
             uploadedImage.id = 'uploadedImage';
-            uploadedImage.src = '../../../strongdog.webp'; // Path to your image
+            uploadedImage.src = '../../../shakesgames.webp'; // Path to your image
             uploadedImage.style.display = 'none';
             introDiv.appendChild(uploadedImage);
 
@@ -56,14 +56,14 @@
                     transition: transform 0.5s ease-in-out;
                 }
 
-                #strongdog, #xp {
+                #shakesgames, #xp {
                     font-size: 3em;
                     font-weight: bold;
                     opacity: 0;
                     animation: fadeInSlam 1s ease forwards;
                 }
 
-                #strongdog {
+                #shakesgames {
                     color: white;
                 }
 
@@ -107,7 +107,7 @@
             setTimeout(() => {
                 uploadedImage.style.display = 'block';
                 uploadedImage.style.opacity = 1;
-                strongDogDiv.style.opacity = 0;
+                brandDiv.style.opacity = 0;
                 xpDiv.style.opacity = 0;
             }, 1500);
 
