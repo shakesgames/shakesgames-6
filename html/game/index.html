@@ -15,12 +15,12 @@
             var introDiv = document.createElement('div');
             introDiv.id = 'intro';
 
-            // Create and add STRONGDOG text
-            var strongDogDiv = document.createElement('div');
-            strongDogDiv.id = 'strongdog';
-            strongDogDiv.innerText = 'STRONGDOG';
-            strongDogDiv.style.opacity = '0'; // Start invisible
-            introDiv.appendChild(strongDogDiv);
+            // Create and add SHAKESGAMES text
+            var SHAKESGAMESDiv = document.createElement('div');
+            SHAKESGAMESDiv.id = 'SHAKESGAMES';
+            SHAKESGAMESDiv.innerText = 'SHAKESGAMES';
+            SHAKESGAMESDiv.style.opacity = '0'; // Start invisible
+            introDiv.appendChild(SHAKESGAMESDiv);
 
             // Create and add XP text
             var xpDiv = document.createElement('div');
@@ -32,7 +32,7 @@
             // Create and add image
             var uploadedImage = document.createElement('img');
             uploadedImage.id = 'uploadedImage';
-            uploadedImage.src = '../../../strongdog.webp'; // Path to your image
+            uploadedImage.src = '../../../SHAKESGAMES.webp'; // Path to your image
             uploadedImage.style.display = 'none';
             introDiv.appendChild(uploadedImage);
 
@@ -56,14 +56,14 @@
                     transition: transform 0.5s ease-in-out;
                 }
 
-                #strongdog, #xp {
+                #SHAKESGAMES, #xp {
                     font-size: 3em;
                     font-weight: bold;
                     opacity: 0;
                     animation: fadeInSlam 1s ease forwards;
                 }
 
-                #strongdog {
+                #SHAKESGAMES {
                     color: white;
                 }
 
@@ -107,7 +107,7 @@
             setTimeout(() => {
                 uploadedImage.style.display = 'block';
                 uploadedImage.style.opacity = 1;
-                strongDogDiv.style.opacity = 0;
+                SHAKESGAMESDiv.style.opacity = 0;
                 xpDiv.style.opacity = 0;
             }, 1500);
 
@@ -131,16 +131,9 @@
 <title>Subway Surfers</title>
 
 <!-- Google -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1477355143669983"
-		crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RN2RSBQT28"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
 
-	gtag('config', 'G-RN2RSBQT28');
-</script>
+
+
 
     <script type="text/javascript" src="4399.z.js"></script>
     <script>
